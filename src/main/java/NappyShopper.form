@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ConsistencyLab">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="NappyShopper">
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
     <rowspec value="center:539px:noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="center:max(d;4px):noGrow"/>
     <rowspec value="top:87dlu:noGrow"/>
     <rowspec value="center:max(d;4px):noGrow"/>
-    <colspec value="left:323dlu:noGrow"/>
+    <colspec value="left:282dlu:noGrow"/>
     <colspec value="fill:142px:noGrow"/>
     <colspec value="left:6dlu:noGrow"/>
-    <colspec value="fill:206px:noGrow"/>
+    <colspec value="fill:192px:noGrow"/>
     <constraints>
-      <xy x="20" y="20" width="999" height="818"/>
+      <xy x="20" y="20" width="841" height="818"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -130,7 +130,7 @@
                   <text value="Create new shoppingcarts"/>
                 </properties>
               </component>
-              <component id="19ea2" class="javax.swing.JTextArea" binding="counterArea">
+              <component id="19ea2" class="javax.swing.JTextArea" binding="resultArea">
                 <constraints>
                   <grid row="28" column="0" row-span="2" col-span="6" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>
@@ -139,7 +139,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="88115" class="javax.swing.JButton" binding="fill50Button">
+              <component id="88115" class="javax.swing.JButton" binding="fillLibero">
                 <constraints>
                   <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms defaultalign-horz="false"/>
@@ -150,7 +150,7 @@
                   <text value="Fill with Libero"/>
                 </properties>
               </component>
-              <component id="c1c2e" class="javax.swing.JButton" binding="fill100Button" default-binding="true">
+              <component id="c1c2e" class="javax.swing.JButton" binding="fillPampers">
                 <constraints>
                   <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms defaultalign-horz="false"/>
@@ -181,19 +181,19 @@
               </component>
               <grid id="bfcc4" layout-manager="FormLayout">
                 <rowspec value="center:d:grow"/>
-                <colspec value="fill:118px:noGrow"/>
-                <colspec value="left:9dlu:noGrow"/>
-                <colspec value="fill:d:grow"/>
+                <colspec value="fill:125px:noGrow"/>
+                <colspec value="left:77dlu:noGrow"/>
+                <colspec value="fill:16px:grow"/>
                 <constraints>
                   <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                  <forms/>
+                  <forms defaultalign-horz="false"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
                 <children>
                   <component id="c366a" class="javax.swing.JLabel" binding="cartCreatedField">
                     <constraints>
-                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <forms/>
                     </constraints>
                     <properties>
@@ -217,7 +217,7 @@
                   <forms/>
                 </constraints>
                 <properties>
-                  <text value="Last executed CQL:"/>
+                  <text value="Output:"/>
                 </properties>
               </component>
               <component id="c06c0" class="javax.swing.JLabel">
@@ -240,7 +240,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="373ce" class="javax.swing.JTextArea" binding="cqlArea">
+                  <component id="373ce" class="javax.swing.JTextArea" binding="outputArea">
                     <constraints/>
                     <properties>
                       <editable value="false"/>
@@ -260,7 +260,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="b9154" class="javax.swing.JTextArea" binding="outputArea">
+              <component id="b9154" class="javax.swing.JTextArea" binding="errorsArea">
                 <constraints/>
                 <properties>
                   <editable value="false"/>
@@ -276,6 +276,8 @@
       </grid>
       <grid id="40680" layout-manager="FormLayout">
         <rowspec value="center:d:grow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <colspec value="fill:336px:grow"/>
@@ -298,10 +300,6 @@
             <rowspec value="center:max(d;4px):noGrow"/>
             <rowspec value="top:4dlu:noGrow"/>
             <rowspec value="center:max(d;4px):noGrow"/>
-            <rowspec value="top:4dlu:noGrow"/>
-            <rowspec value="center:max(d;4px):noGrow"/>
-            <rowspec value="top:4dlu:noGrow"/>
-            <rowspec value="center:max(d;4px):noGrow"/>
             <colspec value="fill:153px:grow"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -310,7 +308,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="7d699" class="javax.swing.JRadioButton" binding="ONERadioButton" default-binding="true">
+              <component id="7d699" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
@@ -320,52 +318,34 @@
                   <text value="ONE"/>
                 </properties>
               </component>
-              <component id="18f66" class="javax.swing.JRadioButton" binding="TWORadioButton" default-binding="true">
+              <component id="e64b0" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
                   <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
-                </constraints>
-                <properties>
-                  <text value="TWO"/>
-                </properties>
-              </component>
-              <component id="b5f98" class="javax.swing.JRadioButton" binding="THREERadioButton" default-binding="true">
-                <constraints>
-                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
-                </constraints>
-                <properties>
-                  <text value="THREE"/>
-                </properties>
-              </component>
-              <component id="e64b0" class="javax.swing.JRadioButton" binding="QUORUMRadioButton" default-binding="true">
-                <constraints>
-                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
                 </constraints>
                 <properties>
                   <text value="QUORUM"/>
                 </properties>
               </component>
-              <component id="39325" class="javax.swing.JRadioButton" binding="EACH_QUORUMRadioButton" default-binding="true">
+              <component id="39325" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
-                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
                 </constraints>
                 <properties>
                   <text value="EACH_QUORUM"/>
                 </properties>
               </component>
-              <component id="9adc0" class="javax.swing.JRadioButton" binding="LOCAL_QUORUMRadioButton" default-binding="true">
+              <component id="9adc0" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
-                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
                 </constraints>
                 <properties>
                   <text value="LOCAL_QUORUM"/>
                 </properties>
               </component>
-              <component id="f5b1f" class="javax.swing.JRadioButton" binding="ANYRadioButton" default-binding="true">
+              <component id="f5b1f" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
@@ -398,13 +378,9 @@
             <rowspec value="center:max(d;4px):noGrow"/>
             <rowspec value="top:4dlu:noGrow"/>
             <rowspec value="center:max(d;4px):noGrow"/>
-            <rowspec value="top:4dlu:noGrow"/>
-            <rowspec value="center:max(d;4px):noGrow"/>
-            <rowspec value="top:4dlu:noGrow"/>
-            <rowspec value="center:max(d;4px):noGrow"/>
             <colspec value="fill:293px:noGrow"/>
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
               <forms/>
             </constraints>
             <properties/>
@@ -419,16 +395,16 @@
                   <text value="Read consistency:"/>
                 </properties>
               </component>
-              <component id="842ff" class="javax.swing.JRadioButton" binding="LOCAL_QUORUMRadioButton1" default-binding="true">
+              <component id="842ff" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
-                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
                 </constraints>
                 <properties>
                   <text value="LOCAL_QUORUM"/>
                 </properties>
               </component>
-              <component id="4c105" class="javax.swing.JRadioButton" binding="ONERadioButton1" default-binding="true">
+              <component id="4c105" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
@@ -438,44 +414,35 @@
                   <text value="ONE"/>
                 </properties>
               </component>
-              <component id="c353e" class="javax.swing.JRadioButton" binding="TWORadioButton1" default-binding="true">
+              <component id="8b893" class="javax.swing.JRadioButton" default-binding="true">
                 <constraints>
                   <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
-                </constraints>
-                <properties>
-                  <text value="TWO"/>
-                </properties>
-              </component>
-              <component id="195d9" class="javax.swing.JRadioButton" binding="THREERadioButton1" default-binding="true">
-                <constraints>
-                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
-                </constraints>
-                <properties>
-                  <text value="THREE"/>
-                </properties>
-              </component>
-              <component id="8b893" class="javax.swing.JRadioButton" binding="QUORUMRadioButton1" default-binding="true">
-                <constraints>
-                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
                 </constraints>
                 <properties>
                   <text value="QUORUM"/>
                 </properties>
               </component>
-              <component id="4fe95" class="javax.swing.JRadioButton" binding="EACH_QUORUMRadioButton1" default-binding="true">
+              <component id="b3ceb" class="javax.swing.JRadioButton" binding="ALLRadioButton1" default-binding="true">
                 <constraints>
-                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <forms/>
                 </constraints>
                 <properties>
-                  <text value="EACH_QUORUM"/>
+                  <text value="ALL"/>
                 </properties>
               </component>
             </children>
           </grid>
+          <component id="94656" class="javax.swing.JRadioButton" binding="ALLRadioButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="ALL"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <component id="d4955" class="javax.swing.JList" binding="keyspacesList">
@@ -490,6 +457,8 @@
             <item value="RF=1"/>
             <item value="RF=2"/>
             <item value="RF=3"/>
+            <item value="RF=5"/>
+            <item value="RF=3(DC1), RF=3(DC2)"/>
           </model>
           <selectionMode value="0"/>
         </properties>
@@ -505,6 +474,7 @@
       <member id="39325"/>
       <member id="9adc0"/>
       <member id="b5f98"/>
+      <member id="94656"/>
     </group>
     <group name="readConsistencyButtonGroup" bound="true">
       <member id="3b9c1"/>
@@ -515,6 +485,7 @@
       <member id="195d9"/>
       <member id="8b893"/>
       <member id="4fe95"/>
+      <member id="b3ceb"/>
     </group>
   </buttonGroups>
 </form>
