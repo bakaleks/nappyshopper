@@ -19,11 +19,10 @@ import com.netflix.astyanax.thrift.ThriftFamilyFactory;
 
 public class NappyShopper {
     Keyspace keyspace;
-    private JPanel panel1;
-    Date cartCreated;
-
-    String[] keyspaces = new String[]{"meetup2_rf1", "meetup2_rf2", "meetup2_rf3", "meetup2_rf5", "meetup2_rf3_dc"};
     private AstyanaxContext<Keyspace> context;
+
+    Date cartCreated;
+    String[] keyspaces = new String[]{"meetup2_rf1", "meetup2_rf2", "meetup2_rf3", "meetup2_rf5", "meetup2_rf3_dc"};
 
     public NappyShopper() {
         usernameField.setText("user" + Math.round(Math.random()*100000));
@@ -222,6 +221,7 @@ public class NappyShopper {
         frame.setVisible(true);
     }
 
+    private JPanel panel1;
     private JTextArea errorsArea;
     private JButton fillLibero;
     private JButton checkoutButton;
@@ -233,8 +233,6 @@ public class NappyShopper {
     private JList keyspacesList;
     private JTextArea resultArea;
     private JTextArea outputArea;
-    private JRadioButton ALLRadioButton;
-    private JRadioButton ALLRadioButton1;
     private ButtonGroup readConsistencyButtonGroup;
     private ButtonGroup writeConsistencyLevelsGroup;
 }
